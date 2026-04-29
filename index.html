@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Master Clean Services</title>
 
-<meta name="description" content="Professional cleaning services in Accra and Tema. Home, office, carpet, post-construction cleaning and more.">
+<meta name="description" content="Professional cleaning services in Accra and Tema.">
 
 <style>
 html { scroll-behavior: smooth; }
@@ -22,12 +22,10 @@ header {
     color: white;
     padding: 15px 20px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
 }
 
 .logo {
@@ -41,9 +39,7 @@ header {
 /* NAV */
 .nav {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
+    gap: 10px;
 }
 
 .nav a {
@@ -58,51 +54,69 @@ header {
 
 /* HERO */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
     url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
     background-size: cover;
+    background-position: center;
     color: white;
-    padding: 100px 20px;
     text-align: center;
 }
 
-.hero h1 { font-size: 38px; }
+.hero h1 {
+    font-size: 48px;
+    max-width: 700px;
+}
 
-/* SECTION */
 .section {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
+}
+
+/* MASTER TITLE */
+.master-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 /* SERVICES */
+.services-section {
+    background: #0077b6;
+    color: white;
+}
+
 .services {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
 }
 
 .card {
     background: white;
-    margin: 15px;
+    color: #0d1b2a;
+    width: 220px;
     padding: 25px;
-    width: 260px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     cursor: pointer;
-    position: relative;
     animation: pulse 3s infinite;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-8px) scale(1.03);
+    transform: scale(1.05);
     animation: none;
 }
 
 .card::after {
     content: "Tap for details ↓";
     font-size: 12px;
-    color: #00b4d8;
+    color: #0077b6;
     display: block;
     margin-top: 10px;
 }
@@ -113,19 +127,56 @@ header {
     100% { transform: scale(1); }
 }
 
-/* HIDDEN DETAILS */
+/* DETAILS INSIDE CARD */
 .details {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
-    margin-top: 10px;
+    transition: 0.4s;
 }
 
 .card.active .details {
     max-height: 200px;
 }
 
-/* SLIDER */
+/* BUTTON ROW */
+.buttons-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.buttons-row button {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: white;
+    color: #0077b6;
+}
+
+.buttons-row button:hover {
+    background: #00b4d8;
+    color: white;
+}
+
+/* DETAILS SECTION */
+.details-section {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.details-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* GALLERY */
 .slider {
     max-width: 800px;
     margin: auto;
@@ -134,7 +185,6 @@ header {
 
 .slides {
     display: flex;
-    transition: 0.5s;
 }
 
 .slides img {
@@ -150,23 +200,6 @@ header {
     padding: 40px 20px;
 }
 
-/* SOCIALS */
-.socials {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.socials a {
-    background: #0d1b2a;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 /* FOOTER */
 footer {
     background: #1b263b;
@@ -177,8 +210,17 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .services { flex-direction: column; }
-    .hero h1 { font-size: 26px; }
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .buttons-row {
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
 }
 </style>
 </head>
@@ -190,7 +232,6 @@ footer {
 <div class="nav">
 <a href="#services">Services</a>
 <a href="#gallery">Gallery</a>
-<a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
 </div>
 </header>
@@ -200,24 +241,56 @@ footer {
 <p>Professional Cleaning Services • Accra & Tema</p>
 </section>
 
-<section id="services" class="section">
+<section class="section">
+<h1 class="master-title">Master Clean</h1>
+</section>
+
+<section id="services" class="section services-section">
 <h2>Our Services</h2>
 
 <div class="services">
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Home Cleaning</h3>
-<p class="details">Deep cleaning for apartments, kitchens, bathrooms and sanitation.</p>
+<h3>Carpet Cleaning</h3>
+<p class="details">Deep carpet washing and stain removal.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Office Cleaning</h3>
-<p class="details">Keep your workspace clean and productive.</p>
+<h3>Contract Cleaning</h3>
+<p class="details">Scheduled cleaning for offices and buildings.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Post Construction</h3>
-<p class="details">Dust and debris removal after building.</p>
+<h3>Cleaning Supplies</h3>
+<p class="details">High-quality cleaning materials available.</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>Event Cleaning</h3>
+<p class="details">Before and after event cleaning.</p>
+</div>
+
+</div>
+
+<div class="buttons-row">
+<button>Book Now</button>
+<button>Get Quote</button>
+<button>Call Us</button>
+<button>WhatsApp</button>
+</div>
+
+</section>
+
+<section class="section">
+<div class="details-section">
+
+<div>
+<h2>Why Choose Us?</h2>
+<p>We provide reliable, professional cleaning services across Accra and Tema. Our team is trained and committed to delivering high-quality results every time.</p>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac">
 </div>
 
 </div>
@@ -230,23 +303,6 @@ footer {
 <img src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f">
 <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a">
 </div>
-</div>
-</section>
-
-<section id="reviews" class="section">
-<h2>Customer Reviews</h2>
-
-<a href="https://search.google.com/local/writereview?placeid=ChIJQSwTQbaBIBAR4fTcjJ7f9qA" target="_blank">⭐ Leave Review</a>
-</section>
-
-<section class="section">
-<h2>Follow Us</h2>
-<div class="socials">
-<a href="https://www.facebook.com/mastercleanservice">Facebook</a>
-<a href="https://www.instagram.com/masterclean_services_">Instagram</a>
-<a href="https://www.twitter.com/mastercleangh">Twitter</a>
-<a href="https://www.linkedin.com/in/master-clean-cleaning-service-067ab0401">LinkedIn</a>
-<a href="http://www.tiktok.com/@mastercleanaccra">TikTok</a>
 </div>
 </section>
 
