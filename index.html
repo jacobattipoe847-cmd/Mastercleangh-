@@ -16,7 +16,6 @@ body {
     background: #f5f7fa;
 }
 
-/* HEADER */
 header {
     background: #0d1b2a;
     color: white;
@@ -36,7 +35,6 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
-/* NAV */
 .nav {
     display: flex;
     gap: 10px;
@@ -52,7 +50,6 @@ header {
     font-weight: bold;
 }
 
-/* HERO */
 .hero {
     height: 90vh;
     display: flex;
@@ -77,14 +74,11 @@ header {
     text-align: center;
 }
 
-/* MASTER TITLE */
 .master-title {
     font-size: 36px;
-    text-align: center;
     margin-bottom: 10px;
 }
 
-/* SERVICES */
 .services-section {
     background: #0077b6;
     color: white;
@@ -94,7 +88,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -127,7 +121,6 @@ header {
     100% { transform: scale(1); }
 }
 
-/* DETAILS INSIDE CARD */
 .details {
     max-height: 0;
     overflow: hidden;
@@ -138,12 +131,16 @@ header {
     max-height: 200px;
 }
 
-/* BUTTON ROW */
 .buttons-row {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.buttons-row a {
+    text-decoration: none;
 }
 
 .buttons-row button {
@@ -161,7 +158,6 @@ header {
     color: white;
 }
 
-/* DETAILS SECTION */
 .details-section {
     max-width: 1000px;
     margin: auto;
@@ -176,7 +172,6 @@ header {
     border-radius: 10px;
 }
 
-/* GALLERY */
 .slider {
     max-width: 800px;
     margin: auto;
@@ -193,14 +188,12 @@ header {
     object-fit: cover;
 }
 
-/* CONTACT */
 .contact {
     background: #0d1b2a;
     color: white;
     padding: 40px 20px;
 }
 
-/* FOOTER */
 footer {
     background: #1b263b;
     color: white;
@@ -208,16 +201,7 @@ footer {
     padding: 10px;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
-    .services {
-        flex-wrap: wrap;
-    }
-
-    .buttons-row {
-        flex-wrap: wrap;
-    }
-
     .hero h1 {
         font-size: 28px;
     }
@@ -270,29 +254,54 @@ footer {
 <p class="details">Before and after event cleaning.</p>
 </div>
 
+<div class="card" onclick="toggleCard(this)">
+<h3>Home Cleaning Services</h3>
+<p class="details">Complete home cleaning including kitchens, bathrooms, and living areas.</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>Post Construction</h3>
+<p class="details">Thorough cleaning after construction or renovation projects.</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>Office Cleaning</h3>
+<p class="details">Daily, weekly, or custom office cleaning solutions.</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>Property Maintenance</h3>
+<p class="details">Routine upkeep and cleaning for residential and commercial properties.</p>
+</div>
+
 </div>
 
 <div class="buttons-row">
+<a href="https://wa.me/233557910719?text=Hello%20Master%20Clean,%20I%20want%20to%20book%20a%20service" target="_blank">
 <button>Book Now</button>
-<button>Get Quote</button>
+</a>
+
+<a href="tel:+233557910719">
 <button>Call Us</button>
+</a>
+
+<a href="https://wa.me/233557910719" target="_blank">
 <button>WhatsApp</button>
+</a>
 </div>
 
 </section>
 
 <section class="section">
 <div class="details-section">
-
 <div>
 <h2>Why Choose Us?</h2>
-<p>We provide reliable, professional cleaning services across Accra and Tema. Our team is trained and committed to delivering high-quality results every time.</p>
+<p>We provide reliable, professional cleaning services across Accra and Tema.</p>
 </div>
 
 <div>
 <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac">
 </div>
-
 </div>
 </section>
 
