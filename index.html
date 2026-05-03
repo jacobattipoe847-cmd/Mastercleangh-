@@ -7,6 +7,9 @@
 
 <meta name="description" content="Professional cleaning services in Accra and Tema.">
 
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 html { scroll-behavior: smooth; }
 
@@ -16,6 +19,7 @@ body {
     background: #f5f7fa;
 }
 
+/* HEADER */
 header {
     background: #0d1b2a;
     color: white;
@@ -25,6 +29,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -35,6 +40,7 @@ header {
     -webkit-text-fill-color: transparent;
 }
 
+/* NAV */
 .nav {
     display: flex;
     gap: 10px;
@@ -50,8 +56,10 @@ header {
     font-weight: bold;
 }
 
+/* HERO */
 .hero {
-    height: 90vh;
+    min-height: 80vh;
+    padding: 120px 20px 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,55 +78,35 @@ header {
 }
 
 .section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
-.master-title {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
+/* SERVICES */
 .services-section {
     background: #0077b6;
     color: white;
 }
 
 .services {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .card {
     background: white;
     color: #0d1b2a;
-    width: 220px;
     padding: 25px;
     border-radius: 10px;
     cursor: pointer;
-    animation: pulse 3s infinite;
     transition: 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
-    animation: none;
-}
-
-.card::after {
-    content: "Tap for details ↓";
-    font-size: 12px;
-    color: #0077b6;
-    display: block;
-    margin-top: 10px;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.03); }
-    100% { transform: scale(1); }
 }
 
 .details {
@@ -131,6 +119,7 @@ header {
     max-height: 200px;
 }
 
+/* BUTTONS */
 .buttons-row {
     display: flex;
     justify-content: center;
@@ -158,53 +147,49 @@ header {
     color: white;
 }
 
-.details-section {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.details-section img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.slider {
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-}
-
-.slides img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
+/* CONTACT + SOCIALS */
 .contact {
     background: #0d1b2a;
     color: white;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #1b263b;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    color: #90e0ef;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    background: #00b4d8;
+    color: white;
+}
+
+.socials i {
+    font-size: 18px;
+}
+
+/* FOOTER */
 footer {
     background: #1b263b;
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 28px;
-    }
 }
 </style>
 </head>
@@ -215,7 +200,6 @@ footer {
 <h2 class="logo">Master Clean</h2>
 <div class="nav">
 <a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </div>
 </header>
@@ -225,28 +209,34 @@ footer {
 <p>Professional Cleaning Services • Accra & Tema</p>
 </section>
 
-<section class="section">
-<h1 class="master-title">Master Clean</h1>
-</section>
-
 <section id="services" class="section services-section">
 <h2>Our Services</h2>
 
 <div class="services">
 
 <div class="card" onclick="toggleCard(this)">
+<h3>Home Cleaning Services</h3>
+<p class="details">Complete home cleaning including kitchens and bathrooms.</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>Office Cleaning</h3>
+<p class="details">Daily and scheduled office cleaning solutions.</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>Post Construction</h3>
+<p class="details">Deep cleaning after construction projects.</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>Property Maintenance</h3>
+<p class="details">Routine upkeep and cleaning for properties.</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
 <h3>Carpet Cleaning</h3>
 <p class="details">Deep carpet washing and stain removal.</p>
-</div>
-
-<div class="card" onclick="toggleCard(this)">
-<h3>Contract Cleaning</h3>
-<p class="details">Scheduled cleaning for offices and buildings.</p>
-</div>
-
-<div class="card" onclick="toggleCard(this)">
-<h3>Cleaning Supplies</h3>
-<p class="details">High-quality cleaning materials available.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
@@ -255,29 +245,19 @@ footer {
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Home Cleaning Services</h3>
-<p class="details">Complete home cleaning including kitchens, bathrooms, and living areas.</p>
+<h3>Contract Cleaning</h3>
+<p class="details">Long-term cleaning contracts for buildings.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Post Construction</h3>
-<p class="details">Thorough cleaning after construction or renovation projects.</p>
-</div>
-
-<div class="card" onclick="toggleCard(this)">
-<h3>Office Cleaning</h3>
-<p class="details">Daily, weekly, or custom office cleaning solutions.</p>
-</div>
-
-<div class="card" onclick="toggleCard(this)">
-<h3>Property Maintenance</h3>
-<p class="details">Routine upkeep and cleaning for residential and commercial properties.</p>
+<h3>Cleaning Supplies</h3>
+<p class="details">High-quality cleaning materials.</p>
 </div>
 
 </div>
 
 <div class="buttons-row">
-<a href="https://wa.me/233557910719?text=Hello%20Master%20Clean,%20I%20want%20to%20book%20a%20service" target="_blank">
+<a href="https://wa.me/233557910719?text=Hello%20I%20want%20to%20book%20a%20service" target="_blank">
 <button>Book Now</button>
 </a>
 
@@ -292,33 +272,43 @@ footer {
 
 </section>
 
-<section class="section">
-<div class="details-section">
-<div>
-<h2>Why Choose Us?</h2>
-<p>We provide reliable, professional cleaning services across Accra and Tema.</p>
-</div>
-
-<div>
-<img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac">
-</div>
-</div>
-</section>
-
-<section id="gallery" class="section">
-<h2>Our Work</h2>
-<div class="slider">
-<div class="slides">
-<img src="https://images.unsplash.com/photo-1603712725038-e9334ae8f39f">
-<img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a">
-</div>
-</div>
-</section>
-
 <section id="contact" class="contact">
 <h2>Contact Us</h2>
+
+<div class="contact-container">
+
+<div>
 <p>📞 +233 55 791 0719</p>
 <p>📍 Accra, Ghana</p>
+</div>
+
+<div class="socials">
+<h3>Follow Us</h3>
+
+<a href="https://www.instagram.com/masterclean_services_" target="_blank">
+<i class="fab fa-instagram"></i> Instagram
+</a>
+
+<a href="https://www.linkedin.com/in/master-clean-cleaning-service-067ab0401" target="_blank">
+<i class="fab fa-linkedin"></i> LinkedIn
+</a>
+
+<a href="https://www.facebook.com/mastercleanservice" target="_blank">
+<i class="fab fa-facebook"></i> Facebook
+</a>
+
+<a href="https://www.tiktok.com/@mastercleanaccra" target="_blank">
+<i class="fab fa-tiktok"></i> TikTok
+</a>
+
+<a href="https://www.twitter.com/mastercleangh" target="_blank">
+<i class="fab fa-x-twitter"></i> Twitter (X)
+</a>
+
+</div>
+
+</div>
+
 </section>
 
 <footer>
