@@ -7,7 +7,6 @@
 
 <meta name="description" content="Professional cleaning services in Accra and Tema.">
 
-<!-- ICONS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -102,11 +101,23 @@ header {
     padding: 25px;
     border-radius: 10px;
     cursor: pointer;
+
+    /* animation start */
+    opacity: 0;
+    transform: translateY(40px);
+
     transition: 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
+}
+
+/* animation active */
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
 }
 
 .details {
@@ -147,7 +158,7 @@ header {
     color: white;
 }
 
-/* CONTACT + SOCIALS */
+/* CONTACT */
 .contact {
     background: #0d1b2a;
     color: white;
@@ -322,6 +333,21 @@ function toggleCard(card) {
     });
     card.classList.toggle('active');
 }
+
+/* SCROLL ANIMATION */
+const cards = document.querySelectorAll('.card');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('show');
+            }, index * 150);
+        }
+    });
+}, { threshold: 0.2 });
+
+cards.forEach(card => observer.observe(card));
 </script>
 
 </body>
