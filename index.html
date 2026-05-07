@@ -3,14 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Master Clean Services</title>
+<title>Master Clean Services | Cleaning Services in Accra & Tema</title>
 
-<meta name="description" content="Professional cleaning services in Accra and Tema.">
+<meta name="description" content="Professional home, office, carpet and post-construction cleaning services in Accra and Tema Ghana.">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -72,7 +74,7 @@ header {
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: clamp(32px, 6vw, 48px);
     max-width: 700px;
 }
 
@@ -101,7 +103,7 @@ header {
     background: #0077b6;
 }
 
-/* make WhatsApp button stand out */
+/* WHATSAPP BUTTON */
 .hero-buttons a:last-child button {
     background: #25D366;
 }
@@ -132,10 +134,8 @@ header {
     padding: 25px;
     border-radius: 10px;
     cursor: pointer;
-
     opacity: 0;
     transform: translateY(40px);
-
     transition: 0.3s;
 }
 
@@ -157,47 +157,6 @@ header {
 
 .card.active .details {
     max-height: 200px;
-}
-
-/* GALLERY */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.gallery img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* BUTTONS */
-.buttons-row {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.buttons-row button {
-    padding: 12px 20px;
-    border-radius: 25px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    background: white;
-    color: #0077b6;
 }
 
 /* CONTACT */
@@ -240,6 +199,23 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* MOBILE */
+@media(max-width:768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding-top: 140px;
+    }
+}
 </style>
 </head>
 
@@ -247,6 +223,7 @@ footer {
 
 <header>
 <h2 class="logo">Master Clean</h2>
+
 <div class="nav">
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
@@ -255,89 +232,94 @@ footer {
 
 <section class="hero">
 <h1>We Make Your Space Spotless & Fresh</h1>
+
 <p>Professional Cleaning Services • Accra & Tema</p>
 
 <div class="hero-buttons">
 <a href="#services"><button>Our Services</button></a>
-<a href="#gallery"><button>View Gallery</button></a>
-<a href="https://wa.me/233557910719" target="_blank"><button>Book Now</button></a>
+
+<a href="https://wa.me/233557910719" target="_blank">
+<button>Book Now</button>
+</a>
 </div>
 </section>
 
 <section id="services" class="section services-section">
-<h2>Our Services</h2>
+<h2>SERVICES</h2>
 
 <div class="services">
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Home Cleaning Services</h3>
+<h3>HOME CLEANING SERVICES</h3>
 <p class="details">Complete home cleaning including kitchens and bathrooms.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Office Cleaning</h3>
+<h3>OFFICE CLEANING</h3>
 <p class="details">Daily and scheduled office cleaning solutions.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Post Construction</h3>
+<h3>POST CONSTRUCTION</h3>
 <p class="details">Deep cleaning after construction projects.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Property Maintenance</h3>
+<h3>PROPERTY MAINTENANCE</h3>
 <p class="details">Routine upkeep and cleaning for properties.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Carpet Cleaning</h3>
-<p class="details">Deep carpet washing and stain removal.</p>
+<h3>CARPET/SOFA CLEANING</h3>
+<p class="details">Deep carpet and sofa washing with stain removal.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Event Cleaning</h3>
-<p class="details">Before and after event cleaning.</p>
+<h3>EVENT CLEANING</h3>
+<p class="details">Before and after event cleaning services.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Contract Cleaning</h3>
-<p class="details">Long-term cleaning contracts for buildings.</p>
+<h3>CONTRACT CLEANING</h3>
+<p class="details">Long-term cleaning contracts for homes and offices.</p>
 </div>
 
 <div class="card" onclick="toggleCard(this)">
-<h3>Cleaning Supplies</h3>
-<p class="details">High-quality cleaning materials.</p>
+<h3>CLEANING SUPPLIES</h3>
+<p class="details">High-quality cleaning products and materials.</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>USHERING SERVICES</h3>
+<p class="details">Professional ushers for weddings, parties and corporate events.</p>
 </div>
 
 </div>
-
-</section>
-
-<GALLERY >
-<section id="gallery" class="section">
-<h2>Our Work</h2>
-
-<div class="gallery">
-<img src="Images.jpeg">
-    
-
-</div>
-
 </section>
 
 <section id="contact" class="contact">
 <h2>Contact Us</h2>
 
 <div class="contact-container">
+
 <div>
 <p>📞 +233 55 791 0719</p>
-<p>📍 Accra,Tema Ghana</p>
+<p>📍 Accra, Tema Ghana</p>
 </div>
 
 <div class="socials">
 <h3>Follow Us</h3>
-<a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-<a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+Instagram
+</a>
+
+<a href="#">
+<i class="fab fa-facebook"></i>
+Facebook
+</a>
+
 </div>
 </div>
 </section>
@@ -351,6 +333,7 @@ function toggleCard(card) {
     document.querySelectorAll('.card').forEach(c => {
         if (c !== card) c.classList.remove('active');
     });
+
     card.classList.toggle('active');
 }
 
@@ -359,9 +342,11 @@ const cards = document.querySelectorAll('.card');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
+
             setTimeout(() => {
                 entry.target.classList.add('show');
             }, index * 150);
+
         }
     });
 }, { threshold: 0.2 });
