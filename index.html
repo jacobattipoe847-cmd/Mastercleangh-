@@ -46,10 +46,6 @@ body.dark .card h3{
 color:#90e0ef;
 }
 
-body.dark footer{
-background:#02060d;
-}
-
 body.dark .nav a{
 background:#132235;
 color:white;
@@ -57,6 +53,10 @@ color:white;
 
 body.dark .contact-box{
 background:#132235;
+}
+
+body.dark footer{
+background:#02060d;
 }
 
 /* HEADER */
@@ -70,10 +70,10 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 25px;
-background:rgba(5,15,30,0.95);
+background:rgba(5,15,30,0.96);
 backdrop-filter:blur(10px);
 z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,0.3);
+box-shadow:0 3px 12px rgba(0,0,0,0.2);
 }
 
 /* LOGO */
@@ -84,18 +84,17 @@ font-weight:900;
 letter-spacing:3px;
 color:white;
 text-transform:uppercase;
-text-shadow:
-0 0 5px #00b4d8,
-0 0 15px #00b4d8,
-0 0 25px #0077b6;
+text-align:center;
+line-height:1.2;
 }
 
 .logo span{
 display:block;
 font-size:12px;
 letter-spacing:4px;
-margin-top:4px;
+margin-top:6px;
 color:#90e0ef;
+text-align:center;
 }
 
 /* NAV */
@@ -134,6 +133,11 @@ background:#00b4d8;
 color:white;
 font-weight:bold;
 cursor:pointer;
+transition:0.3s;
+}
+
+.mode-toggle:hover{
+background:#0077b6;
 }
 
 /* HERO */
@@ -145,10 +149,10 @@ justify-content:center;
 align-items:center;
 flex-direction:column;
 text-align:center;
-padding:140px 20px 80px;
+padding:150px 20px 90px;
 
 background:
-linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.72)),
 url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
 
 background-size:cover;
@@ -157,22 +161,24 @@ color:white;
 }
 
 .hero h1{
-font-size:clamp(40px,7vw,72px);
+font-size:clamp(42px,7vw,75px);
 max-width:1000px;
 margin-bottom:20px;
 animation:fadeUp 1s ease;
 }
 
 .hero p{
-max-width:700px;
+max-width:720px;
 font-size:18px;
-line-height:1.7;
-opacity:0.95;
-animation:fadeUp 1.4s ease;
+line-height:1.8;
+opacity:0.96;
+animation:fadeUp 1.3s ease;
 }
 
+/* HERO BUTTONS */
+
 .hero-buttons{
-margin-top:35px;
+margin-top:40px;
 display:flex;
 gap:15px;
 flex-wrap:wrap;
@@ -191,11 +197,11 @@ font-size:15px;
 font-weight:bold;
 cursor:pointer;
 transition:0.3s;
-box-shadow:0 6px 20px rgba(0,0,0,0.35);
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
 .hero-buttons button:hover{
-transform:translateY(-4px);
+transform:translateY(-4px) scale(1.03);
 }
 
 .primary-btn{
@@ -216,13 +222,13 @@ color:white;
 /* SECTION */
 
 .section{
-padding:90px 20px;
+padding:100px 20px;
 text-align:center;
 }
 
 .section h2{
-font-size:40px;
-margin-bottom:50px;
+font-size:42px;
+margin-bottom:55px;
 }
 
 /* SERVICES */
@@ -234,22 +240,24 @@ color:white;
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:28px;
 max-width:1200px;
 margin:auto;
 }
+
+/* CARDS */
 
 .card{
 background:white;
 color:#0d1b2a;
 padding:30px 25px;
-border-radius:20px;
+border-radius:22px;
 cursor:pointer;
-transition:0.4s;
+transition:0.4s ease;
 opacity:0;
-transform:translateY(50px);
-box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transform:translateY(60px);
+box-shadow:0 10px 24px rgba(0,0,0,0.15);
 }
 
 .card.show{
@@ -271,7 +279,8 @@ font-size:20px;
 max-height:0;
 overflow:hidden;
 transition:0.4s;
-line-height:1.7;
+line-height:1.8;
+font-size:15px;
 }
 
 .card.active .details{
@@ -286,7 +295,7 @@ max-width:1100px;
 margin:auto;
 overflow:hidden;
 border-radius:25px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+box-shadow:0 10px 28px rgba(0,0,0,0.2);
 }
 
 .slider{
@@ -300,11 +309,11 @@ min-width:100%;
 
 .slide img{
 width:100%;
-height:550px;
+height:560px;
 object-fit:cover;
 }
 
-/* BUTTONS */
+/* SLIDER BUTTONS */
 
 .prev,
 .next{
@@ -340,13 +349,13 @@ right:15px;
 .contact{
 background:#0d1b2a;
 color:white;
-padding:80px 20px;
+padding:90px 20px;
 }
 
 .contact-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+gap:35px;
 max-width:1100px;
 margin:auto;
 }
@@ -354,12 +363,13 @@ margin:auto;
 .contact-box{
 background:#1b263b;
 padding:30px;
-border-radius:20px;
+border-radius:22px;
 }
 
 .contact-box h3{
 margin-bottom:20px;
 color:#90e0ef;
+font-size:24px;
 }
 
 /* SOCIALS */
@@ -368,7 +378,7 @@ color:#90e0ef;
 display:flex;
 align-items:center;
 gap:12px;
-padding:14px;
+padding:15px;
 margin:12px 0;
 border-radius:12px;
 background:#243447;
@@ -391,9 +401,10 @@ background:#132235;
 color:white;
 text-align:center;
 padding:18px;
+font-size:15px;
 }
 
-/* ANIMATION */
+/* ANIMATIONS */
 
 @keyframes fadeUp{
 
@@ -416,18 +427,27 @@ transform:translateY(0);
 header{
 flex-direction:column;
 gap:15px;
+padding:15px;
 }
 
 .hero{
-padding-top:180px;
+padding-top:200px;
 }
 
 .hero h1{
 font-size:42px;
 }
 
+.hero p{
+font-size:16px;
+}
+
 .slide img{
-height:320px;
+height:330px;
+}
+
+.section h2{
+font-size:34px;
 }
 
 }
@@ -465,7 +485,7 @@ MASTER CLEAN
 <h1>Professional Cleaning Services In Accra & Tema 🇬🇭</h1>
 
 <p>
-Deep cleaning solutions for homes, offices, apartments, events and commercial spaces with premium quality service.
+Deep cleaning solutions for homes, offices, apartments, events and commercial spaces with premium quality service and trusted professionalism.
 </p>
 
 <div class="hero-buttons">
@@ -696,7 +716,7 @@ setTimeout(()=>{
 
 entry.target.classList.add('show');
 
-},index*100);
+},index*120);
 
 }
 
