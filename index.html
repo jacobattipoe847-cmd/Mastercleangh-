@@ -12,6 +12,35 @@ Professional Home, Office & Carpet Cleaning Services in Tema & Accra Ghana 🇬�
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
+<!-- ✅ IMPROVED LOCAL SEO SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MASTER CLEAN",
+  "image": "https://i.ibb.co/Wp089ZMR/IMG-3336.jpg",
+  "description": "Professional cleaning services in Accra and Tema Ghana including home cleaning, office cleaning, carpet cleaning, sofa cleaning, event cleaning and post-construction cleaning.",
+  "telephone": "+233557910719",
+  "priceRange": "Affordable",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Accra",
+    "addressRegion": "Greater Accra",
+    "addressCountry": "GH"
+  },
+  "areaServed": [
+    "Accra",
+    "Tema",
+    "East Legon",
+    "Spintex",
+    "Madina",
+    "Adenta",
+    "Cantonments"
+  ],
+  "url": "https://yourwebsite.com"
+}
+</script>
+
 <style>
 
 html{scroll-behavior:smooth;}
@@ -30,21 +59,7 @@ transition:0.4s;
 overflow-x:hidden;
 }
 
-/* DARK MODE */
-
-body.dark{
-background:#08121f;
-color:white;
-}
-
-body.dark .card{background:#132235;color:white;}
-body.dark footer{background:#02060d;}
-body.dark .nav a{background:#132235;color:white;}
-body.dark .contact-box{background:#132235;}
-body.dark .services-section{background:#023047;}
-
 /* HEADER */
-
 header{
 position:fixed;
 top:0;
@@ -57,9 +72,8 @@ padding:15px 25px;
 background:rgba(5,15,30,0.95);
 backdrop-filter:blur(10px);
 z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.3);
 }
-
-/* LOGO */
 
 .logo{
 font-size:34px;
@@ -68,8 +82,6 @@ letter-spacing:2px;
 color:white;
 text-transform:uppercase;
 text-align:center;
-line-height:1.2;
-text-shadow:none;
 }
 
 .logo span{
@@ -81,29 +93,7 @@ color:#dce6f2;
 text-align:center;
 }
 
-/* NAV */
-
-.nav{
-display:flex;
-gap:10px;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.nav a{
-text-decoration:none;
-background:white;
-color:#0d1b2a;
-padding:10px 18px;
-border-radius:30px;
-font-size:14px;
-font-weight:bold;
-}
-
-.nav a:hover{background:#00b4d8;color:white;}
-
 /* HERO */
-
 .hero{
 min-height:100vh;
 display:flex;
@@ -134,43 +124,40 @@ opacity:0.95;
 }
 
 /* BUTTONS */
-
 .hero-buttons{
-margin-top:35px;
+margin-top:25px;
 display:flex;
-gap:15px;
+gap:12px;
 flex-wrap:wrap;
 justify-content:center;
 }
 
 .hero-buttons button{
-padding:15px 28px;
+padding:12px 22px;
 border:none;
-border-radius:35px;
-font-size:15px;
+border-radius:30px;
 font-weight:bold;
 cursor:pointer;
-transition:0.3s;
 }
 
-.primary-btn{background:#00b4d8;color:white;}
 .whatsapp-btn{background:#25D366;color:white;}
 .call-btn{background:#ef233c;color:white;}
 
 /* SECTION */
-
 .section{
-padding:90px 20px;
+padding:80px 20px;
 text-align:center;
 }
 
-.section h2{
-font-size:40px;
-margin-bottom:50px;
+/* ✅ NEW SEO SECTION */
+.seo-near{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+font-size:17px;
 }
 
 /* SERVICES */
-
 .services-section{
 background:#0077b6;
 color:white;
@@ -178,8 +165,8 @@ color:white;
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 max-width:1200px;
 margin:auto;
 }
@@ -187,39 +174,44 @@ margin:auto;
 .card{
 background:white;
 color:#0d1b2a;
-padding:30px;
-border-radius:20px;
+padding:25px;
+border-radius:18px;
 box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
-.card:hover{transform:translateY(-8px);}
+.card h3{
+color:#0077b6;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:14px;
+line-height:1.6;
+}
 
 /* GALLERY */
-
 .slider-container{
-position:relative;
-max-width:1100px;
+max-width:1000px;
 margin:auto;
 overflow:hidden;
-border-radius:25px;
+border-radius:20px;
 }
 
 .slider{
 display:flex;
-transition:transform 0.6s ease-in-out;
+transition:0.5s ease;
 }
 
 .slide{min-width:100%;}
 
 .slide img{
 width:100%;
-height:550px;
+height:500px;
 object-fit:cover;
 display:block;
 }
 
 /* CONTACT */
-
 .contact{
 background:#0d1b2a;
 color:white;
@@ -229,61 +221,40 @@ padding:80px 20px;
 .contact-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+gap:25px;
 max-width:1100px;
 margin:auto;
 }
 
 .contact-box{
 background:#1b263b;
-padding:30px;
-border-radius:20px;
+padding:25px;
+border-radius:18px;
 }
-
-/* SOCIALS */
 
 .socials a{
 display:flex;
-gap:12px;
-padding:14px;
-margin:12px 0;
-border-radius:12px;
+gap:10px;
+padding:12px;
+margin:10px 0;
 background:#243447;
 color:#90e0ef;
+border-radius:10px;
 text-decoration:none;
 }
 
 /* FOOTER */
-
 footer{
 background:#132235;
-color:white;
 text-align:center;
-padding:18px;
-}
-
-/* MAP */
-
-.map-box{
-margin-bottom:20px;
-}
-
-.map-box h3{
-color:#90e0ef;
-margin-bottom:10px;
-}
-
-.map-box iframe{
-width:100%;
-height:220px;
-border:0;
-border-radius:15px;
+padding:15px;
+color:white;
 }
 
 /* MOBILE */
-
 @media(max-width:768px){
-.hero{padding:160px 20px 80px;}
+.slide img{height:300px;}
+.hero h1{font-size:40px;}
 }
 
 </style>
@@ -296,28 +267,19 @@ border-radius:15px;
 MASTER CLEAN
 <span>CLEANING SERVICE 🇬🇭</span>
 </div>
-
-<div class="nav">
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
-</div>
 </header>
 
 <!-- HERO -->
-
 <section class="hero">
 
 <h1>Professional Cleaning Services In Accra & Tema 🇬🇭</h1>
 
 <p>
-Deep cleaning solutions for homes, offices, apartments, events and commercial spaces in Accra, Tema and surrounding areas in Ghana.
+Deep cleaning solutions for homes, offices, apartments, events and commercial spaces across Accra, Tema and surrounding areas in Ghana.
 </p>
 
 <div class="hero-buttons">
 
-<a href="#services"><button class="primary-btn">Our Services</button></a>
-<a href="#gallery"><button class="primary-btn">View Gallery</button></a>
 <a href="https://wa.me/233557910719"><button class="whatsapp-btn">Book Now</button></a>
 <a href="tel:+233557910719"><button class="call-btn">Call Us</button></a>
 
@@ -325,29 +287,65 @@ Deep cleaning solutions for homes, offices, apartments, events and commercial sp
 
 </section>
 
-<!-- SERVICES -->
+<!-- ✅ IMPROVED NEAR YOU SEO SECTION -->
+<section class="section">
 
-<section id="services" class="section services-section">
+<h2>CLEANING SERVICES NEAR YOU IN ACCRA & TEMA</h2>
+
+<p class="seo-near">
+If you are searching for cleaning services near me in Accra or Tema, MASTER CLEAN provides fast, reliable and professional cleaning for homes, offices, carpets, sofas, events and post-construction sites. We serve East Legon, Spintex, Madina, Adenta, Cantonments, Airport Residential and surrounding areas in Ghana with affordable and high-quality service.
+</p>
+
+</section>
+
+<!-- SERVICES -->
+<section class="section services-section">
 
 <h2>OUR SERVICES</h2>
 
 <div class="services">
 
-<div class="card"><h3>HOME CLEANING</h3></div>
-<div class="card"><h3>OFFICE CLEANING</h3></div>
-<div class="card"><h3>CARPET & SOFA CLEANING</h3></div>
-<div class="card"><h3>POST CONSTRUCTION CLEANING</h3></div>
-<div class="card"><h3>EVENT CLEANING</h3></div>
-<div class="card"><h3>SWIMMING POOL CLEANING</h3></div>
-<div class="card"><h3>USHERING SERVICES</h3></div>
+<div class="card">
+<h3>HOME CLEANING</h3>
+<p>Deep home cleaning services in Accra and Tema for kitchens, bedrooms and bathrooms to keep your home fresh and hygienic.</p>
+</div>
+
+<div class="card">
+<h3>OFFICE CLEANING</h3>
+<p>Professional office cleaning in Accra and Tema for a clean, healthy and productive working environment.</p>
+</div>
+
+<div class="card">
+<h3>CARPET & SOFA CLEANING</h3>
+<p>Deep carpet and sofa cleaning in Accra and Tema to remove stains, dirt and odors.</p>
+</div>
+
+<div class="card">
+<h3>POST CONSTRUCTION CLEANING</h3>
+<p>Post-construction cleaning in Accra and Tema including dust removal and site cleanup.</p>
+</div>
+
+<div class="card">
+<h3>EVENT CLEANING</h3>
+<p>Event cleaning services in Accra and Tema before and after weddings and parties.</p>
+</div>
+
+<div class="card">
+<h3>SWIMMING POOL CLEANING</h3>
+<p>Swimming pool cleaning in Accra and Tema with full maintenance and sanitation.</p>
+</div>
+
+<div class="card">
+<h3>USHERING SERVICES</h3>
+<p>Professional ushering services in Accra and Tema for events and corporate functions.</p>
+</div>
 
 </div>
 
 </section>
 
 <!-- GALLERY -->
-
-<section id="gallery" class="section">
+<section class="section">
 
 <h2>OUR GALLERY</h2>
 
@@ -366,34 +364,23 @@ Deep cleaning solutions for homes, offices, apartments, events and commercial sp
 </section>
 
 <!-- CONTACT -->
+<section class="contact">
 
-<section id="contact" class="contact">
-
-<h2>CONTACT US</h2>
-
-<div class="map-box">
-<h3>Our Location</h3>
-
-<iframe 
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254525.347!2d-0.236!3d5.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c2b0b0b0b0b%3A0xaccra!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sgh!4v0000000000">
-</iframe>
-</div>
+<h2 style="text-align:center;margin-bottom:30px;">CONTACT US</h2>
 
 <div class="contact-container">
 
 <div class="contact-box">
 <h3>Reach Us</h3>
 <p>📞 +233 55 791 0719</p>
-<p>📍 Accra & Tema</p>
+<p>📍 Accra & Tema, Ghana 🇬🇭</p>
 </div>
 
 <div class="contact-box socials">
 <h3>Socials</h3>
-
 <a href="https://instagram.com/masterclean_service">Instagram</a>
 <a href="https://tiktok.com/@masterclean_service">TikTok</a>
 <a href="https://wa.me/233557910719">WhatsApp</a>
-
 </div>
 
 </div>
@@ -406,12 +393,12 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254525.347!2d-0.236!3
 
 <script>
 
-let index = 0;
+let index=0;
 setInterval(()=>{
-const slider = document.getElementById("slider");
-const slides = document.querySelectorAll(".slide");
-index = (index + 1) % slides.length;
-slider.style.transform = `translateX(-${index * 100}%)`;
+const slider=document.getElementById("slider");
+const slides=document.querySelectorAll(".slide");
+index=(index+1)%slides.length;
+slider.style.transform=`translateX(-${index*100}%)`;
 },3000);
 
 </script>
