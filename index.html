@@ -1,65 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>Professional Cleaning Services in Accra & Tema Ghana | MASTER CLEAN</title>
+<title>MASTER CLEAN Cleaning Service 🇬🇭 | Accra & Tema</title>
 
-<meta name="description" content="MASTER CLEAN offers professional home cleaning, office cleaning, carpet cleaning, swimming pool cleaning, event cleaning and post construction cleaning services in Accra and Tema Ghana."/>
+<meta name="description" content="Professional home, office, carpet, swimming pool and post-construction cleaning services in Accra and Tema Ghana."/>
 
-<meta name="keywords" content="cleaning services Ghana, cleaning company Accra, cleaning service Tema, office cleaning Ghana, carpet cleaning Tema, home cleaning Accra, post construction cleaning Ghana"/>
-
-<meta name="author" content="MASTER CLEAN Cleaning Service"/>
-
-<meta name="robots" content="index, follow"/>
-
-<meta name="theme-color" content="#0077b6"/>
-
-<link rel="canonical" href="https://yourwebsite.com"/>
-
-<!-- OPEN GRAPH -->
-
-<meta property="og:title" content="MASTER CLEAN Cleaning Services Ghana"/>
-<meta property="og:description" content="Professional cleaning services in Accra & Tema Ghana."/>
-<meta property="og:image" content="https://i.ibb.co/Wp089ZMR/IMG-3336.jpg"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://yourwebsite.com"/>
-
-<!-- TWITTER -->
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="MASTER CLEAN Cleaning Services Ghana"/>
-<meta name="twitter:description" content="Professional cleaning services in Ghana."/>
-<meta name="twitter:image" content="https://i.ibb.co/Wp089ZMR/IMG-3336.jpg"/>
-
-<!-- SEO SCHEMA -->
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"LocalBusiness",
-"name":"MASTER CLEAN Cleaning Service",
-"image":"https://i.ibb.co/Wp089ZMR/IMG-3336.jpg",
-"telephone":"+233557910719",
-"address":{
-"@type":"PostalAddress",
-"addressLocality":"Accra",
-"addressRegion":"Greater Accra",
-"addressCountry":"GH"
-},
-"areaServed":[
-"Accra",
-"Tema"
-],
-"description":"Professional home, office, carpet and post construction cleaning services in Ghana.",
-"url":"https://yourwebsite.com"
-}
-</script>
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
 <style>
 
@@ -75,10 +24,10 @@ box-sizing:border-box;
 
 body{
 font-family:'Segoe UI',sans-serif;
-background:#eef5fb;
+background:#f4f7fb;
 color:#111;
-overflow-x:hidden;
 transition:0.4s;
+overflow-x:hidden;
 }
 
 /* DARK MODE */
@@ -88,15 +37,26 @@ background:#08121f;
 color:white;
 }
 
-body.dark .card,
-body.dark .contact-box,
+body.dark .card{
+background:#132235;
+color:white;
+}
+
+body.dark .card h3{
+color:#90e0ef;
+}
+
+body.dark footer{
+background:#02060d;
+}
+
 body.dark .nav a{
 background:#132235;
 color:white;
 }
 
-body.dark footer{
-background:#02060d;
+body.dark .contact-box{
+background:#132235;
 }
 
 /* HEADER */
@@ -109,12 +69,14 @@ width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:16px 25px;
-background:rgba(4,15,28,0.96);
-backdrop-filter:blur(12px);
+padding:15px 25px;
+background:rgba(5,15,30,0.95);
+backdrop-filter:blur(10px);
 z-index:1000;
-box-shadow:0 3px 12px rgba(0,0,0,0.2);
+box-shadow:0 2px 10px rgba(0,0,0,0.3);
 }
+
+/* LOGO */
 
 .logo{
 font-size:34px;
@@ -122,33 +84,37 @@ font-weight:900;
 letter-spacing:3px;
 color:white;
 text-transform:uppercase;
-line-height:1.1;
-text-align:center;
+text-shadow:
+0 0 5px #00b4d8,
+0 0 15px #00b4d8,
+0 0 25px #0077b6;
 }
 
 .logo span{
 display:block;
 font-size:12px;
 letter-spacing:4px;
-margin-top:5px;
+margin-top:4px;
 color:#90e0ef;
 }
 
+/* NAV */
+
 .nav{
 display:flex;
-gap:12px;
-flex-wrap:wrap;
+gap:10px;
 align-items:center;
+flex-wrap:wrap;
 }
 
 .nav a{
 text-decoration:none;
-padding:11px 18px;
-border-radius:30px;
 background:white;
 color:#0d1b2a;
+padding:10px 18px;
+border-radius:30px;
 font-size:14px;
-font-weight:700;
+font-weight:bold;
 transition:0.3s;
 }
 
@@ -158,19 +124,16 @@ color:white;
 transform:translateY(-2px);
 }
 
+/* MODE BUTTON */
+
 .mode-toggle{
 border:none;
-padding:11px 18px;
+padding:10px 18px;
 border-radius:30px;
 background:#00b4d8;
 color:white;
 font-weight:bold;
 cursor:pointer;
-transition:0.3s;
-}
-
-.mode-toggle:hover{
-background:#0077b6;
 }
 
 /* HERO */
@@ -182,10 +145,10 @@ justify-content:center;
 align-items:center;
 flex-direction:column;
 text-align:center;
-padding:170px 20px 100px;
+padding:140px 20px 80px;
 
 background:
-linear-gradient(rgba(0,0,0,0.74),rgba(0,0,0,0.74)),
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
 url('https://images.unsplash.com/photo-1581578731548-c64695cc6952');
 
 background-size:cover;
@@ -194,29 +157,30 @@ color:white;
 }
 
 .hero h1{
-font-size:clamp(42px,7vw,78px);
-max-width:1100px;
-margin-bottom:22px;
-line-height:1.1;
+font-size:clamp(40px,7vw,72px);
+max-width:1000px;
+margin-bottom:20px;
 animation:fadeUp 1s ease;
 }
 
 .hero p{
+max-width:700px;
 font-size:18px;
-max-width:760px;
-line-height:1.9;
-opacity:0.96;
-animation:fadeUp 1.3s ease;
+line-height:1.7;
+opacity:0.95;
+animation:fadeUp 1.4s ease;
 }
 
-/* HERO BUTTONS */
-
 .hero-buttons{
-margin-top:42px;
+margin-top:35px;
 display:flex;
-gap:16px;
+gap:15px;
 flex-wrap:wrap;
 justify-content:center;
+}
+
+.hero-buttons a{
+text-decoration:none;
 }
 
 .hero-buttons button{
@@ -227,11 +191,11 @@ font-size:15px;
 font-weight:bold;
 cursor:pointer;
 transition:0.3s;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
+box-shadow:0 6px 20px rgba(0,0,0,0.35);
 }
 
 .hero-buttons button:hover{
-transform:translateY(-4px) scale(1.03);
+transform:translateY(-4px);
 }
 
 .primary-btn{
@@ -249,37 +213,16 @@ background:#ef233c;
 color:white;
 }
 
-/* WHATSAPP FLOAT */
-
-.float-whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-width:62px;
-height:62px;
-background:#25D366;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-border-radius:50%;
-font-size:28px;
-text-decoration:none;
-z-index:999;
-box-shadow:0 6px 20px rgba(0,0,0,0.3);
-animation:pulse 2s infinite;
-}
-
 /* SECTION */
 
 .section{
-padding:110px 20px;
+padding:90px 20px;
 text-align:center;
 }
 
 .section h2{
-font-size:42px;
-margin-bottom:55px;
+font-size:40px;
+margin-bottom:50px;
 }
 
 /* SERVICES */
@@ -291,8 +234,8 @@ color:white;
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
 max-width:1200px;
 margin:auto;
 }
@@ -300,13 +243,13 @@ margin:auto;
 .card{
 background:white;
 color:#0d1b2a;
-padding:32px 25px;
-border-radius:24px;
+padding:30px 25px;
+border-radius:20px;
 cursor:pointer;
 transition:0.4s;
 opacity:0;
-transform:translateY(70px);
-box-shadow:0 12px 28px rgba(0,0,0,0.16);
+transform:translateY(50px);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
 .card.show{
@@ -315,7 +258,7 @@ transform:translateY(0);
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-8px);
 }
 
 .card h3{
@@ -328,8 +271,7 @@ font-size:20px;
 max-height:0;
 overflow:hidden;
 transition:0.4s;
-line-height:1.9;
-font-size:15px;
+line-height:1.7;
 }
 
 .card.active .details{
@@ -343,8 +285,8 @@ position:relative;
 max-width:1100px;
 margin:auto;
 overflow:hidden;
-border-radius:28px;
-box-shadow:0 10px 28px rgba(0,0,0,0.2);
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
 .slider{
@@ -358,16 +300,18 @@ min-width:100%;
 
 .slide img{
 width:100%;
-height:580px;
+height:550px;
 object-fit:cover;
 }
+
+/* BUTTONS */
 
 .prev,
 .next{
 position:absolute;
 top:50%;
 transform:translateY(-50%);
-background:rgba(0,0,0,0.45);
+background:rgba(0,0,0,0.5);
 border:none;
 color:white;
 padding:15px;
@@ -396,36 +340,37 @@ right:15px;
 .contact{
 background:#0d1b2a;
 color:white;
-padding:100px 20px;
+padding:80px 20px;
 }
 
 .contact-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:35px;
+gap:30px;
 max-width:1100px;
 margin:auto;
 }
 
 .contact-box{
 background:#1b263b;
-padding:35px;
-border-radius:24px;
+padding:30px;
+border-radius:20px;
 }
 
 .contact-box h3{
 margin-bottom:20px;
 color:#90e0ef;
-font-size:24px;
 }
+
+/* SOCIALS */
 
 .socials a{
 display:flex;
 align-items:center;
 gap:12px;
-padding:15px;
+padding:14px;
 margin:12px 0;
-border-radius:14px;
+border-radius:12px;
 background:#243447;
 color:#90e0ef;
 text-decoration:none;
@@ -436,7 +381,7 @@ transition:0.3s;
 .socials a:hover{
 background:#00b4d8;
 color:white;
-transform:translateX(6px);
+transform:translateX(5px);
 }
 
 /* FOOTER */
@@ -445,8 +390,7 @@ footer{
 background:#132235;
 color:white;
 text-align:center;
-padding:20px;
-font-size:15px;
+padding:18px;
 }
 
 /* ANIMATION */
@@ -465,22 +409,6 @@ transform:translateY(0);
 
 }
 
-@keyframes pulse{
-
-0%{
-transform:scale(1);
-}
-
-50%{
-transform:scale(1.08);
-}
-
-100%{
-transform:scale(1);
-}
-
-}
-
 /* MOBILE */
 
 @media(max-width:768px){
@@ -488,36 +416,18 @@ transform:scale(1);
 header{
 flex-direction:column;
 gap:15px;
-padding:15px;
 }
 
 .hero{
-padding-top:220px;
+padding-top:180px;
 }
 
 .hero h1{
 font-size:42px;
 }
 
-.hero p{
-font-size:16px;
-}
-
 .slide img{
-height:330px;
-}
-
-.section h2{
-font-size:34px;
-}
-
-.hero-buttons{
-flex-direction:column;
-align-items:center;
-}
-
-.hero-buttons button{
-width:240px;
+height:320px;
 }
 
 }
@@ -526,16 +436,6 @@ width:240px;
 </head>
 
 <body>
-
-<!-- FLOATING WHATSAPP -->
-
-<a href="https://wa.me/233557910719"
-class="float-whatsapp"
-target="_blank">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
 
 <header>
 
@@ -562,30 +462,287 @@ MASTER CLEAN
 
 <section class="hero">
 
-<h1>Professional Cleaning Services In Accra & Tema Ghana 🇬🇭</h1>
+<h1>Professional Cleaning Services In Accra & Tema 🇬🇭</h1>
 
 <p>
-Trusted deep cleaning solutions for homes, offices, apartments, carpets, swimming pools, events and commercial spaces with premium professionalism.
+Deep cleaning solutions for homes, offices, apartments, events and commercial spaces with premium quality service.
 </p>
 
 <div class="hero-buttons">
 
 <a href="#services">
-<button class="primary-btn">OUR SERVICES</button>
+<button class="primary-btn">Our Services</button>
 </a>
 
 <a href="#gallery">
-<button class="primary-btn">VIEW GALLERY</button>
+<button class="primary-btn">View Gallery</button>
 </a>
 
 <a href="https://wa.me/233557910719" target="_blank">
-<button class="whatsapp-btn">BOOK NOW</button>
+<button class="whatsapp-btn">Book Now</button>
 </a>
 
 <a href="tel:+233557910719">
-<button class="call-btn">CALL US</button>
+<button class="call-btn">Call Us</button>
 </a>
 
 </div>
 
 </section>
+
+<!-- SERVICES -->
+
+<section id="services" class="section services-section">
+
+<h2>OUR SERVICES</h2>
+
+<div class="services">
+
+<div class="card" onclick="toggleCard(this)">
+<h3>HOME CLEANING</h3>
+<p class="details">
+Complete deep cleaning for kitchens, bedrooms, bathrooms and living areas.
+</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>OFFICE CLEANING</h3>
+<p class="details">
+Professional sanitation and workspace cleaning for offices and businesses.
+</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>POST CONSTRUCTION CLEANING</h3>
+<p class="details">
+Dust removal, debris cleanup and finishing touches after construction works.
+</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>PROPERTY MAINTENANCE</h3>
+<p class="details">
+Routine upkeep and sanitation for residential and commercial properties.
+</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>CARPET & SOFA CLEANING</h3>
+<p class="details">
+Deep stain extraction and upholstery cleaning for a refreshed appearance.
+</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>EVENT CLEANING</h3>
+<p class="details">
+Before and after event venue cleaning for weddings and corporate programs.
+</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>SWIMMING POOL CLEANING</h3>
+<p class="details">
+Professional pool sanitation, algae removal and maintenance services.
+</p>
+</div>
+
+<div class="card" onclick="toggleCard(this)">
+<h3>USHERING SERVICES</h3>
+<p class="details">
+Professional ushers for weddings, conferences, parties and corporate events.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery" class="section">
+
+<h2>OUR GALLERY</h2>
+
+<div class="slider-container">
+
+<button class="prev" onclick="moveSlide(-1)">❮</button>
+
+<div class="slider" id="slider">
+
+<div class="slide">
+<img src="https://i.ibb.co/Wp089ZMR/IMG-3336.jpg">
+</div>
+
+<div class="slide">
+<img src="https://i.ibb.co/gbtqbJK8/IMG-3240.jpg">
+</div>
+
+<div class="slide">
+<img src="https://i.ibb.co/JW0FJkyP/IMG-3205.jpg">
+</div>
+
+<div class="slide">
+<img src="https://i.ibb.co/35KmFYMz/IMG-3140.jpg">
+</div>
+
+<div class="slide">
+<img src="https://i.ibb.co/CKdxhb9F/IMG-3124.jpg">
+</div>
+
+<div class="slide">
+<img src="https://i.ibb.co/GfrP1Sgh/IMG-3052.jpg">
+</div>
+
+</div>
+
+<button class="next" onclick="moveSlide(1)">❯</button>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2 style="text-align:center;margin-bottom:40px;">CONTACT US</h2>
+
+<div class="contact-container">
+
+<div class="contact-box">
+
+<h3>Reach Us</h3>
+
+<p>📞 +233 55 791 0719</p>
+<br>
+
+<p>📍 Accra & Tema, Ghana 🇬🇭</p>
+<br>
+
+<p>🕒 Mon - Sat | 7:00AM - 8:00PM</p>
+
+</div>
+
+<div class="contact-box socials">
+
+<h3>Follow Us</h3>
+
+<a href="https://instagram.com/masterclean_service" target="_blank">
+<i class="fab fa-instagram"></i>
+Instagram
+</a>
+
+<a href="https://facebook.com" target="_blank">
+<i class="fab fa-facebook"></i>
+Facebook
+</a>
+
+<a href="https://tiktok.com/@masterclean_service" target="_blank">
+<i class="fab fa-tiktok"></i>
+TikTok
+</a>
+
+<a href="https://wa.me/233557910719" target="_blank">
+<i class="fab fa-whatsapp"></i>
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 MASTER CLEAN Cleaning Service 🇬🇭 • All Rights Reserved
+</footer>
+
+<script>
+
+/* DARK MODE */
+
+function toggleMode(){
+document.body.classList.toggle('dark');
+}
+
+/* SERVICE CARDS */
+
+function toggleCard(card){
+
+document.querySelectorAll('.card').forEach(c=>{
+
+if(c!==card){
+c.classList.remove('active');
+}
+
+});
+
+card.classList.toggle('active');
+
+}
+
+/* ANIMATION */
+
+const cards=document.querySelectorAll('.card');
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach((entry,index)=>{
+
+if(entry.isIntersecting){
+
+setTimeout(()=>{
+
+entry.target.classList.add('show');
+
+},index*100);
+
+}
+
+});
+
+},{threshold:0.2});
+
+cards.forEach(card=>observer.observe(card));
+
+/* SLIDER */
+
+let currentSlide=0;
+
+const slider=document.getElementById('slider');
+
+const slides=document.querySelectorAll('.slide');
+
+function showSlide(index){
+
+if(index>=slides.length){
+currentSlide=0;
+}
+
+else if(index<0){
+currentSlide=slides.length-1;
+}
+
+else{
+currentSlide=index;
+}
+
+slider.style.transform=`translateX(-${currentSlide*100}%)`;
+
+}
+
+function moveSlide(direction){
+showSlide(currentSlide+direction);
+}
+
+/* AUTO SLIDE */
+
+setInterval(()=>{
+moveSlide(1);
+},3500);
+
+</script>
+
+</body>
+</html>
