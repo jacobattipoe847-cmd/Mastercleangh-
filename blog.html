@@ -4,84 +4,250 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Blog | MASTER CLEAN</title>
+<title>Blog | MASTER CLEAN Ghana</title>
+
+<meta name="description" content="Professional cleaning services in Accra and Tema. Home, office, carpet, deep cleaning and post-construction cleaning by MASTER CLEAN Ghana.">
+
+<meta name="keywords" content="cleaning services Ghana, office cleaning Accra, deep cleaning Tema, carpet cleaning Ghana, post construction cleaning">
+
+<meta name="author" content="MASTER CLEAN">
+
+<meta property="og:title" content="MASTER CLEAN Blog">
+<meta property="og:description" content="Professional cleaning tips and services in Accra and Tema.">
+<meta property="og:type" content="website">
 
 <style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 body{
   font-family: Arial, sans-serif;
-  margin:0;
   background:#f5f9ff;
   color:#111;
-}
-
-header{
-  background:#0056b3;
-  color:white;
-  padding:20px;
-  text-align:center;
-}
-
-.container{
-  max-width:900px;
-  margin:auto;
-  padding:20px;
-}
-
-.blog-post{
-  background:white;
-  padding:20px;
-  margin-bottom:25px;
-  border-radius:12px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.blog-post h2{
-  color:#003366;
-}
-
-.blog-post h3{
-  color:#0056b3;
-  margin-top:20px;
-}
-
-.blog-post p{
   line-height:1.7;
 }
 
-.blog-post ul{
-  padding-left:20px;
+/* HEADER */
+
+header{
+  background:linear-gradient(135deg,#003366,#0056b3);
+  color:white;
+  padding:40px 20px;
+  text-align:center;
 }
+
+header h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+header p{
+  font-size:18px;
+  opacity:0.9;
+}
+
+/* NAVIGATION */
+
+nav{
+  margin-top:20px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 12px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+nav a:hover{
+  opacity:0.8;
+}
+
+/* CONTAINER */
+
+.container{
+  max-width:950px;
+  margin:auto;
+  padding:25px;
+}
+
+/* BACK BUTTON */
 
 .back-btn{
   display:inline-block;
-  margin:15px 0;
-  padding:10px 15px;
+  margin-bottom:20px;
+  padding:12px 18px;
   background:#003366;
   color:white;
   text-decoration:none;
   border-radius:8px;
+  transition:0.3s;
 }
+
+.back-btn:hover{
+  background:#0056b3;
+}
+
+/* BLOG CARD */
+
+.blog-post{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.blog-post:hover{
+  transform:translateY(-4px);
+}
+
+/* BLOG IMAGE */
+
+.blog-image{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:25px;
+}
+
+/* HEADINGS */
+
+.blog-post h2{
+  color:#003366;
+  margin-bottom:10px;
+  font-size:32px;
+}
+
+.blog-post h3{
+  color:#0056b3;
+  margin-top:30px;
+  margin-bottom:10px;
+}
+
+.post-date{
+  color:gray;
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+/* PARAGRAPHS */
+
+.blog-post p{
+  margin-bottom:18px;
+}
+
+/* LISTS */
+
+.blog-post ul{
+  padding-left:20px;
+  margin-top:10px;
+}
+
+.blog-post li{
+  margin-bottom:10px;
+}
+
+/* CONTACT BOX */
+
+.contact-box{
+  background:#f0f6ff;
+  padding:20px;
+  border-radius:12px;
+  margin-top:35px;
+}
+
+.contact-box h3{
+  margin-top:0;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
+  padding:30px 20px;
+  color:#555;
+  font-size:14px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+header h1{
+  font-size:30px;
+}
+
+header p{
+  font-size:15px;
+}
+
+nav a{
+  display:inline-block;
+  margin:8px;
+}
+
+.blog-post{
+  padding:20px;
+}
+
+.blog-post h2{
+  font-size:24px;
+}
+
+body{
+  font-size:15px;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-  <h1>MASTER CLEAN BLOG</h1>
+
+<h1>MASTER CLEAN BLOG</h1>
+
+<p>Professional Cleaning Services in Accra & Tema</p>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+
 </header>
 
 <div class="container">
 
-<!-- BACK BUTTON -->
 <a href="index.html" class="back-btn">← Back to Home</a>
 
-<!-- BLOG POST -->
 <div class="blog-post">
+
+<!-- BLOG IMAGE -->
+<img src="images/cleaning-team.jpg"
+alt="MASTER CLEAN Cleaning Team"
+class="blog-image">
 
 <h2>Why Professional Cleaning Services Matter in Accra</h2>
 
+<p class="post-date">
+Published by MASTER CLEAN • May 2026
+</p>
+
 <p>
-Keeping your home or office clean is more than just appearance. A clean environment improves health, comfort, productivity, and creates a better impression for visitors and clients. In busy areas across Accra and surrounding communities, dust, stains, and daily activities can quickly make spaces dirty and uncomfortable.
+Keeping your home or office clean is more than just appearance. A clean environment improves health, comfort, productivity, and creates a better impression for visitors and clients.
+</p>
+
+<p>
+In busy areas across Accra and surrounding communities, dust, stains, and daily activities can quickly make spaces dirty and uncomfortable.
 </p>
 
 <p>
@@ -90,40 +256,45 @@ Professional cleaning services help remove hidden dirt, bacteria, and odors that
 
 <h3>Benefits of Professional Cleaning</h3>
 
-<p><b>1. Healthier Environment</b><br>
+<p>
+<b>1. Healthier Environment</b><br>
 Dust, bacteria, and allergens can build up over time in homes and offices. Professional cleaning helps improve air quality and reduce germs.
 </p>
 
-<p><b>2. Saves Time and Energy</b><br>
+<p>
+<b>2. Saves Time and Energy</b><br>
 Cleaning large spaces can take time. Hiring professionals allows you to focus on work while experts handle the cleaning.
 </p>
 
-<p><b>3. Better Appearance</b><br>
+<p>
+<b>3. Better Appearance</b><br>
 Clean spaces look more attractive and welcoming for guests and customers.
 </p>
 
-<p><b>4. Protects Furniture and Carpets</b><br>
+<p>
+<b>4. Protects Furniture and Carpets</b><br>
 Regular cleaning extends the life of your furniture and removes stubborn stains.
 </p>
 
-<p><b>5. Stress-Free Living</b><br>
+<p>
+<b>5. Stress-Free Living</b><br>
 A clean environment improves mood and reduces stress.
 </p>
 
 <h3>Cleaning Services Available</h3>
 
 <ul>
-<li>HOME CLEANING</li>
-<li>OFFICE CLEANING</li>
-<li>DEEP CLEANING</li>
-<li>POST-CONSTRUCTION CLEANING</li>
-<li>CARPET CLEANING</li>
-<li>CARPET & SOFA CLEANING</li>
-<li>SWIMMING POOL CLEANING</li>
-<li>EVENT CLEANING</li>
-<li>CONTRACT CLEANING</li>
-<li>CLEANING SUPPLIES</li>
-<li>USHERING SERVICES</li>
+<li>Home Cleaning</li>
+<li>Office Cleaning</li>
+<li>Deep Cleaning</li>
+<li>Post-Construction Cleaning</li>
+<li>Carpet Cleaning</li>
+<li>Carpet & Sofa Cleaning</li>
+<li>Swimming Pool Cleaning</li>
+<li>Event Cleaning</li>
+<li>Contract Cleaning</li>
+<li>Cleaning Supplies</li>
+<li>Ushering Services</li>
 </ul>
 
 <h3>Areas We Serve</h3>
@@ -161,9 +332,35 @@ MASTER CLEAN provides reliable and professional cleaning services across Greater
 Whether you need one-time deep cleaning or regular cleaning, we are ready to keep your environment fresh and spotless.
 </p>
 
+<div class="contact-box">
+
+<h3>Book Our Cleaning Services</h3>
+
+<p>
+Need professional cleaning services in Accra or Tema?
+</p>
+
+<p>
+📞 Call/WhatsApp: +233 XX XXX XXXX
+</p>
+
+<p>
+📧 Email: info@mastercleangh.com
+</p>
+
+<p>
+We are available for homes, offices, apartments, events and commercial spaces.
+</p>
+
 </div>
 
 </div>
+
+</div>
+
+<footer>
+© 2026 MASTER CLEAN Ghana. All Rights Reserved.
+</footer>
 
 </body>
 </html>
